@@ -1,0 +1,31 @@
+
+:root {
+  --dark: #1c1c1c;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Gochi Hand', cursive;
+  font-family: 'Kameron', serif; 
+  background-color:black;
+  letter-spacing: 3px; 
+  font-weight: bold;
+}
+
+/* ---- reset ---- */
+canvas {
+  display: block;
+  z-index: -50;
+
+}
+/* ---- tsparticles container ---- */
+#tsparticles {
+  z-index: -50 !important;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}

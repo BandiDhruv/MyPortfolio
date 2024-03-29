@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+@keyframes wavingHand {
+  0% { transform: rotate( 0.0deg) }
+  10% { transform: rotate(20.0deg) }  
+  20% { transform: rotate(-10.0deg) }
+  30% { transform: rotate(20.0deg) }
+  40% { transform: rotate(-5.0deg) }
+  50% { transform: rotate(10.0deg) }
+  60% { transform: rotate( 0.0deg) }  
+ 100% { transform: rotate( 0.0deg) }
+}
+
+
+.wave{
+  transform-origin: 70% 70%;  
+  animation: wavingHand infinite 2s;
+}

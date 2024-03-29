@@ -1,0 +1,25 @@
+
+.CircularProgressbar{
+    border-radius: 50%;
+    background: rgba(128, 128, 128, 0.412);
+    border: 1px solid transparent;
+}
+
+
+/* .CircularProgressbar-path {
+   stroke: rgba(101, 74, 44, 0.822) ; 
+} */
+.CircularProgressbar-trail {
+  stroke: rgba(241, 241, 241, 0) !important;
+}
+/* 
+.CircularProgressbar-text {
+} */
+
+/* .CircularProgressbar-background {
+  fill: orange !important; 
+} */
+
+
+
+
