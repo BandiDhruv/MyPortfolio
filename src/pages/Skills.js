@@ -60,7 +60,7 @@ const Skills = () => {
                             <CircularProgressLogo text={'JavaScript'}
                                 logo={js}
                                 percentage={60}/>
-                            <CircularProgressLogo text={'Python'}
+                            <CircularProgressLogo text={'TypeScript'}
                                 logo={TypeScript}
                                 percentage={40}/>
 
