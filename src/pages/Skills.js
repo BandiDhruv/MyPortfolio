@@ -1,6 +1,4 @@
 import React from 'react'
-import blackBg1 from '../includes/images/bgBlackMd.png'
-import blackBg2 from '../includes/images/bgBlackSm.png'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faAngleRight} from '@fortawesome/free-solid-svg-icons';
 import TsParticles from '../components/TsParticles';
@@ -74,16 +72,16 @@ const Skills = () => {
                             <div className='skills-section-body flex flex-row items-center justify-around w-full gap-3'>
                                 <CircularProgressLogo text={'HTML'}
                                     logo={html}
-                                    percentage={85}/>
+                                    percentage={60}/>
                                 <CircularProgressLogo text={'CSS'}
                                     logo={css}
-                                    percentage={90}/>
+                                    percentage={60}/>
                                 <CircularProgressLogo text={'ReactJS'}
                                     logo={reactjs}
-                                    percentage={75}/>
+                                    percentage={65}/>
                                 <CircularProgressLogo text={'NodeJS'}
                                     logo={nodejs}
-                                    percentage={65}/>
+                                    percentage={55}/>
                             </div>
                         </div>
                     </div>
@@ -92,16 +90,16 @@ const Skills = () => {
                         <div className="skills-section-body flex flex-row items-center justify-around w-full gap-3">
                             <CircularProgressLogo text={'VS Code'}
                                 logo={vscode}
-                                percentage={95}/>
+                                percentage={75}/>
                             <CircularProgressLogo text={'Git'}
                                 logo={git}
-                                percentage={75}/>
+                                percentage={50}/>
                             <CircularProgressLogo text={'GitHub'}
                                 logo={github}
-                                percentage={75}/>
+                                percentage={62}/>
                             <CircularProgressLogo text={'Linux'}
                                 logo={linux}
-                                percentage={60}/>
+                                percentage={45}/>
                         </div>
                     </div>
                     <div className="skills-section gap-4 flex flex-col w-full lg:w-[80%] pb-10">
@@ -109,16 +107,16 @@ const Skills = () => {
                         <div className="skills-section-body flex flex-row items-center justify-around w-full gap-3">
                             <CircularProgressLogo text={'MongoDB'}
                                 logo={mongodb}
-                                percentage={55}/>
+                                percentage={60}/>
                             <CircularProgressLogo text={'NextJS'}
                                 logo={nextjs}
-                                percentage={65}/>
+                                percentage={40}/>
                             <CircularProgressLogo text={'Bootstrap'}
                                 logo={bootstrap}
-                                percentage={85}/>
+                                percentage={55}/>
                             <CircularProgressLogo text={'Tailwind CSS'}
                                 logo={tailwind}
-                                percentage={95}/>
+                                percentage={40}/>
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,5 @@
 import React from 'react'
 import "../includes/css/home.css"
-import blackBg1 from '../includes/images/bgBlackMd.png'
-import blackBg2 from '../includes/images/bgBlackSm.png'
 import Typewriter from "typewriter-effect"
 import Footer from '../components/Footer'
 import TsParticles from '../components/TsParticles'
@@ -13,10 +11,9 @@ const Home = () => {
 
     <div className="w-full mt-[80px] ml-0 md:ml-[200px] md:mt-0">
       <TsParticles />
-      <div className={`z-10 flex flex-col justify-end md: bg-[url('${blackBg2}')]backdrop-blur-xl h-[200px] lg:bg-cover bg-left text-white`}>
+      <div className={`z-10 flex flex-col justify-end md: backdrop-blur-xl h-[200px] lg:bg-cover bg-left text-white`}>
 
         <div className="path p-10">
-          {/* <p>Home &nbsp;<FontAwesomeIcon icon={faAngleRight}/> &nbsp; About</p> */}
           <p className='text-5xl pb-3'><strong>Home</strong></p>
           <button disabled className='bg-white rounded-xl mr-2 w-[50px] h-[10px]'></button>
           <button disabled className='bg-white rounded-xl animate-pulse mr-2 w-[10px] h-[10px]'></button>

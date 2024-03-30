@@ -1,111 +1,83 @@
 import React from 'react'
 import "../includes/css/projects.css"
-import blackBg1 from '../includes/images/bgBlackMd.png'
-import blackBg2 from '../includes/images/bgBlackSm.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import TsParticles from '../components/TsParticles';
 import ProjectCard from "../components/ProjectsCard"
 import Footer from '../components/Footer';
-import todoList1 from '../includes/images/todolistImg1.png'
-import todoListLogo from '../includes/images/todolistLogo.png'
-import udgam1 from '../includes/images/udgamImg1.png'
-import portfolioImg1 from '../includes/images/portfolioImg1.png'
-import udgamLogo from '../includes/images/udgamLogo.png'
-import newsInsightImg from '../includes/images/newsInsightImg.png'
-import fdms from '../includes/images/fdms.png'
+import sportsims from '../includes/images/sportsims.png'
+import simslogo from '../includes/images/simslogo.png'
+import huf from '../includes/images/HUF.png'
+import huflogo from '../includes/images/huflogo.png'
+import mirologo from "../includes/images/mirologo.svg"
+import miroc from '../includes/images/miroc.png'
 const Projects = () => {
 
  
     const projects = {
         project1:{
             id:1,
-            title:"To-Do List",
-            subtitle:"Task Manager",
-            image:todoList1,
+            title:"SIMS",
+            subtitle:"Inventory Management",
+            image:sportsims,
             desc: {
-                line1:"Built a to-do list website using LAMP stack, with backend validation for user login and signup.",
-                line2:"Includes functionalities such as add, delete, edit, sort, and filter tasks."
+                line1:"Built a Sports Inventory Management System website using MERN stack, with backend validation for user login and signup.",
+                line2:"Includes functionalities such as add, update, delete inventory."
             },
             techStack:[
                 "HTML",
                 "CSS",
                 "JavaScript",
-                "PHP",
-                "MySQL",
-                "Bootstrap"
+                "MongoDB",
+                "ReactJS",
+                "NodeJS"
             ],
-            hostLink:"https://todolist-2363.000webhostapp.com/",
-            githubLink:"https://github.com/Akshar2363/To-Do-List",
-            logo:todoListLogo
+            hostLink:"https://sports-ims.vercel.app/",
+            githubLink:"https://github.com/BandiDhruv/Sports_IMS",
+            logo:simslogo
         },
         project2:{
             id:2,
-            title:"Udgam '23 Website",
-            subtitle:"Cultural Fest Website",
-            image:udgam1,
+            title:"Health Umbrella",
+            subtitle:"Frontend ",
+            image:huf,
             desc: {
-                line1:"Designed and developed the website for Udgam '23, the cultural fest at NIT Sikkim",
+                line1:"This is a project made for the people who are mislead by many sources on website with false data for their particular disease",
             },
             techStack:[
                 "HTML",
                 "CSS",
                 "JavaScript",
-                "Taiwind CSS"
+                "ReactJS"
             ],
-            hostLink:"https://udgam.nitsikkim.ac.in/udgam23/",
-            logo:udgamLogo
+            hostLink:"https://healthumbrella.org/",
+            githubLink:"https://github.com/BandiDhruv/health_umbrella_foundation_frontend",
+            logo:huflogo
         },
-        project3:{
-            id:3,
-            title:"Personal Portfolio",
-            subtitle:"Know About Me",
-            image:portfolioImg1,
-            desc: {
-                line1:"Worked on building my own personal portfolio.",
-                line2:"Includes my skills, resume and a contact page.",
-            },
-            techStack:[
-                "ReactJS",
-                "TailwindCSS",
-            ],            
-        },
+
         project4:{
             id:4,
-            title:"News Insight",
-            subtitle:"News App",
-            image:newsInsightImg,
+            title:"MIROC",
+            subtitle:"Miro Clone",
+            image:miroc,
             desc: {
-                line1:"News app built using NewsAPI and ReactJS",
-                line2:"Contains functionality of filtering news based on categores",
+                line1:"MIRO-CLONE built using NEXTJS ",
+                line2:"Contains functionality of adding , deleting and updating the board in real time .",
             },
             techStack:[
-                "ReactJS",
-                "Bootstrap",
+                "NEXTJS",
+                "Convex Database",
+                "Clerk Auth",
+                "Tailwind CSS",
+                "TypeScript",
+                "Liveblocks"
             ],
-            githubLink:"https://github.com/Akshar2363/newsInsight",
+            logo:mirologo,
+            githubLink:"https://github.com/BandiDhruv/MiroC",
+            hostLink:"https://miroc.vercel.app/"
             
         },
-        project5:{
-            id:5,
-            title:"FileShare",
-            subtitle:"File Dispatch Management System",
-            image:fdms,
-            desc: {
-                line1:"A mile management and sharing Application",
-                line2:"Contains functionality of uploading and sharing files to friends.",
-            },
-            techStack:[
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "PHP",
-                "MySQL",
-                "Tailwind CSS"
-            ],
-            githubLink:"https://github.com/Akshar2363/fileDispatchManagementSystem",
-            
-        }
+       
     }
 
   return (
@@ -113,7 +85,7 @@ const Projects = () => {
             <TsParticles/>
 
             <div className={
-                `z-10 flex flex-col justify-end md:bg-[url('${blackBg1}')] bg-[url('${blackBg2}')] backdrop-blur-xl h-[200px] lg:bg-cover bg-left text-white`
+                `z-10 flex flex-col justify-end md:backdrop-blur-xl h-[200px] lg:bg-cover bg-left text-white`
             }>
                 <div className="path p-10">
                     <p>Home &nbsp;<FontAwesomeIcon icon={faAngleRight}/>
@@ -137,11 +109,8 @@ const Projects = () => {
                         <ProjectCard project={projects.project2} />
                     </div>
                     <div className={`flex flex-col lg:flex-row gap-5 items-around justify-around`}>
-                        {/* <ProjectCard project={projects.project3} /> */}
                         <ProjectCard project={projects.project4} />
-                        <ProjectCard project={projects.project5} />
                     </div>
-                    
                 </div>
             </div>
             <Footer/>
