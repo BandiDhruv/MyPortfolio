@@ -16,7 +16,7 @@ import linux from '../includes/images/linux.png'
 import vscode from '../includes/images/vscode.png'
 import github from '../includes/images/github.png'
 import git from '../includes/images/git.png'
-import bootstrap from '../includes/images/bootstrap.png'
+import redux from '../includes/images/redux.png'
 import tailwind from '../includes/images/tailwind.png'
 import "../includes/css/skills.css"
 import CircularProgressLogo from '../components/CircularProgressLogo';
@@ -111,8 +111,8 @@ const Skills = () => {
                             <CircularProgressLogo text={'NextJS'}
                                 logo={nextjs}
                                 percentage={40}/>
-                            <CircularProgressLogo text={'Bootstrap'}
-                                logo={bootstrap}
+                            <CircularProgressLogo text={'Redux'}
+                                logo={redux}
                                 percentage={55}/>
                             <CircularProgressLogo text={'Tailwind CSS'}
                                 logo={tailwind}
